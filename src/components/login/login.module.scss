@@ -1,0 +1,74 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40%;
+    gap: 3vh;
+    
+    input{
+        width: 70%;
+        padding: 2%;
+        margin-left: 12%;
+    }
+
+   .button{
+    width: 75%;
+    padding: 2%;
+    margin-left: 12%;
+    background-color: orange;
+    color: whitesmoke;
+    border-radius: 10px;
+    border-color: orange;
+    font-size: large;
+    font-weight: 200;
+   
+   }
+    
+}
+
+//Mobile First View
+@media screen and (min-width: 641px) {
+    
+}
+
+
+@media screen and (min-width: 961px) {}
+
+
+@media screen and (min-width: 1024px) {
+    .section{
+        margin-top: 20%;
+    }
+}
+
+
+@media screen and (min-width: 1281px) {
+    .section{
+        margin-top: 5%;
+    input{
+        width: 30%;
+        padding: 1%;
+        margin-left: 33%;
+    }
+
+   .button{
+    width: 33%;
+    padding: 1%;
+    margin-left: 33%;
+    background-color: orange;
+    color: whitesmoke;
+    border-radius: 10px;
+    border-color: orange;
+    font-size: large;
+    font-weight: 200;
+   
+   }
+}
+ }
+
+
+@media screen and (min-width: 1500px) {
+   
+ }
+
+
+@media screen and (min-width: 2000px) { }

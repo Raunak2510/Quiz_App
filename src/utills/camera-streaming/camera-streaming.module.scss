@@ -1,0 +1,19 @@
+.videoContainer {
+    width: 100%;           
+    max-width: 500px;      
+    height: 300px;         
+    border: 2px solid #ccc; 
+    background-color: #000; 
+    display: flex;         
+    align-items: center;   
+    justify-content: center; 
+    overflow: hidden;      
+    margin: 0 auto;        
+  }
+  
+  .video {
+    width: 100%;           
+    height: auto;          
+    object-fit: cover;    
+  }
+  
