@@ -6,7 +6,7 @@ import InputBox from "../../atoms/input-box";
 import Button from "../../atoms/buttons";
 import QuestionSubject from "../../components/question-subject";
 import Timer from "../../components/timer";
-
+import Result from "../../components/result/index.js";
 
 import styles from "./question-dashboard.module.scss";
 
@@ -17,6 +17,7 @@ function QuestionDashboard() {
     const [questionColors, setQuestionColors] = useState([]);
     const [selectedOption, setSelectedOption] = useState([]);
     const [questionId, setQuestionId] = useState([]);
+    const [submit, setSubmit]=useState("no");
    
 //    console.log("local");
 //    console.log(localStorage.getItem("userId"));
@@ -42,7 +43,7 @@ function QuestionDashboard() {
         })
         .then((response) => {
             console.log("Test submitted successfully", response.data);
-            
+            setSubmit("yes");
         })
         .catch((error) => {
             console.error("Error submitting test", error);
@@ -95,7 +96,11 @@ function QuestionDashboard() {
     if (loading) return <p>Loading questions...</p>;
     if (error) return <p>Error loading questions.</p>;
     if (!questions.length) return <p>No questions available.</p>;
-
+    if(submit==="yes"){
+        return (
+            <Result />
+        )
+    }
     return (
         <section className={styles.questionDashboard}>
             <article className={styles.subject}>
