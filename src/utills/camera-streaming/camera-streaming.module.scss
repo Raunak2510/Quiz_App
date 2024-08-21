@@ -1,7 +1,7 @@
 .videoContainer {
     width: 100%;           
-    max-width: 500px;      
-    height: 300px;         
+    max-width: 25%;      
+    height: 50%;         
     border: 2px solid #ccc; 
     background-color: #000; 
     display: flex;         
@@ -16,4 +16,25 @@
     height: auto;          
     object-fit: cover;    
   }
+
+  
+@media screen and (min-width: 641px) {}
+
+
+@media screen and (min-width: 961px) {}
+
+
+@media screen and (min-width: 1024px) {}
+
+
+@media screen and (min-width: 1281px) { 
+
+}
+
+
+@media screen and (min-width: 1500px) { }
+
+
+@media screen and (min-width: 2000px) { }
+
   

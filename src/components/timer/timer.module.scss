@@ -1,0 +1,36 @@
+.timer {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    // text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    h3 {
+        margin-bottom: 10px;
+        font-size: 1.2em;
+        color: #333;
+    }
+
+    .time {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            span {
+                font-size: 2.5em;
+                font-weight: bold;
+                color: #007bff;
+            }
+
+            small {
+                font-size: 0.8em;
+                color: #888;
+            }
+        }
+    }
+}

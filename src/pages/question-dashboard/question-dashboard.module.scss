@@ -1,0 +1,119 @@
+.questionDashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-sizing: border-box;
+
+    .subject {
+        background-color: rgb(197, 188, 188);
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+        border-bottom: 1px solid #ccc;
+    }
+
+    h5 {
+        margin: 20px 0;
+    }
+
+    .dashboard {
+        display: flex;
+        flex-direction: row;
+        height: 80%;
+        justify-content: space-between;
+        
+        
+        .question {
+            flex-grow: 1;
+            max-width: 100%;
+            overflow-y: auto;
+            max-height: 100%;
+            background-color: #f9f9f9;
+            margin-right: 20px;
+            
+            p {
+                margin-bottom: 15px;
+                margin-left: 10px;
+            }
+        
+            .options {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .navigationButtons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: white;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-top: 1px solid #ccc;
+
+        .mark_for_review, .previous, .next, .submit {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            color: whitesmoke;
+        }
+
+        .mark_for_review {
+            background-color: red;
+        }
+
+        .previous, .next {
+            background-color: rgb(96, 96, 206);
+        }
+
+        .submit {
+            background-color: green;
+        }
+    }
+}
+
+// Mobile First View
+@media screen and (min-width: 641px) {}
+
+@media screen and (min-width: 961px) {}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width: 1281px) {
+    .questionDashboard {
+        max-width: 100%;
+        overflow-y: auto;
+        max-height: 80%;
+        
+        .timer{
+         display: flex;
+         flex-direction: row;
+         margin-left: 40%;
+         gap: 30vw;
+        }
+
+        .dashboard {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            .question {
+                max-width: 100%;
+                overflow-y: auto;
+                max-height: 80%;
+            }
+        }
+
+        .navigationButtons {
+            max-width: 75%;
+        }
+    }
+}
+
+@media screen and (min-width: 1500px) {}
+
+@media screen and (min-width: 2000px) {}

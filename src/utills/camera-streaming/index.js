@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+
 import styles from './camera-streaming.module.scss'; 
 
 const CameraStream = () => {
@@ -31,10 +32,24 @@ const CameraStream = () => {
       }
     };
 
+    function getLocalAudio() {
+      navigator.mediaDevices
+        .getUserMedia({ video: false, audio: true })
+        .then((stream) => {
+          window.localStream = stream;
+          window.localAudio.srcObject = stream;
+          window.localAudio.autoplay = true;
+        })
+        .catch((err) => {
+          console.error(`you got an error: ${err}`);
+        });
+    }
+
     startStream();
+    getLocalAudio();
 
     return () => {
-      if (videoRef.current && videoRef.current.srcObject) {
+      if(videoRef.current && videoRef.current.srcObject) {
         const tracks = videoRef.current.srcObject.getTracks();
         tracks.forEach((track) => track.stop());
       }

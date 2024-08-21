@@ -1,12 +1,12 @@
+import React from "react";
+import Index from "../src/route"; 
 
-import TermAndCondition from './pages/conformation-page';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-     <TermAndCondition />
-    
+      <Index />
     </div>
   );
 }

@@ -1,0 +1,113 @@
+.section {
+    width: 100%;           
+    max-width: 25%;      
+    height: 50%;         
+    border: 2px solid #ccc; 
+    flex-direction: column; 
+    display: flex;         
+    align-items: center;   
+    justify-content: center; 
+    overflow: hidden;      
+    margin: 0 auto;   
+    margin-top: 20%;
+    gap: 3vh;
+
+    .button {
+        border-radius: 8px;
+        
+       
+        height: 40%;
+        width: 100%; 
+    }
+
+    .question_number {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 2vw; 
+        margin-left: 10%;
+        max-height: 100px;
+        overflow-y: auto;
+        padding: 5%;
+    }
+
+    .question_number > * {
+        flex: 1 0 15%; 
+        max-width: 15%; 
+    }
+
+    .subject {
+        background-color: rgb(197, 188, 188);
+        width: 100%;
+        height: 20%;
+    }
+}
+
+//Mobile First View
+@media screen and (min-width: 641px) {}
+
+
+@media screen and (min-width: 961px) {}
+
+
+@media screen and (min-width: 1024px) {}
+
+
+@media screen and (min-width: 1281px) {
+    .section {
+        width: 100%;           
+        max-width: 25%;      
+        height: 50%;         
+      //  border: 2px solid #ccc; 
+        flex-direction: column; 
+        display: flex;         
+        align-items: center;   
+        justify-content: center; 
+        overflow: auto;      
+        margin: 0 auto;   
+      // margin-top: 20%;
+       
+        gap: 3vh;
+    
+        .button {
+            border-radius: 8px;
+            
+           
+            height: 40%;
+            width: 100%; 
+        }
+    
+        .question_number {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 2vw; 
+            margin-left: 10%;
+            max-height: 100px;
+            overflow-y: auto;
+            padding: 5%;
+        }
+    
+        .question_number > * {
+            flex: 1 0 15%; 
+            max-width: 15%; 
+        }
+    
+        .subject {
+            background-color: rgb(197, 188, 188);
+            width: 100%;
+            height: 20%;
+            margin-top: -30%;
+        }
+    }
+ }
+
+
+@media screen and (min-width: 1500px) { }
+
+
+@media screen and (min-width: 2000px) { }
+
+  
